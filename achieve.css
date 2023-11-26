@@ -1,0 +1,227 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.201);
+  }
+  
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+  }
+  .navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+  .navbar ul li{
+    font-size: 30px;
+    padding:5px 15px;
+    border: solid 0px;
+    border-color: rgba(0, 0, 0, 0.483);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.483);
+    margin: 10px;
+
+  }
+  .navbar ul li:hover{
+    background-color: rgba(58, 56, 56, 0.466);
+    color: rgb(80, 78, 78);
+    
+  }
+
+
+  .navbar ul li a:hover{
+    /* background-color: rgba(255, 255, 255, 0.674); */
+    color: rgb(80, 78, 78);
+  }
+
+  .navbar ul li:active{
+    transform: scale(0.9);
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+  }
+
+  .navbar ul li a{
+    text-decoration: none;
+    color: white;
+  }
+   .video-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .video-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .video {
+    min-width: 100%;
+    min-height: 100%;
+    width: 130%;
+    height: 120%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  .side ul{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    gap: 1px;
+    border: solid 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.336);
+    width: 20%;
+  }
+  .side ul li{
+    display: flex;
+    font-size: 30px;
+    flex-direction: column;
+    align-items: start;
+    padding-bottom: 35px;
+    justify-content: space-between;
+    justify-self: center;
+    align-content: baseline;
+  }
+  .heading1{
+    text-align: center;
+  }
+  .side ul li:hover{
+    background-color: rgba(109, 105, 105, 0.36) ;
+    border: solid 0px;
+    border-radius: 5px;
+  }
+  /* .side ul li:active{
+    
+  } */
+  * {
+    box-sizing: border-box;
+  }
+  
+
+  
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .left {
+    left: 0;
+  }
+  
+  .right {
+    left: 50%;
+  }
+  
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: rgba(37, 35, 35, 0.395);
+    position: relative;
+    border-radius: 6px;
+  }
+  .pic{
+    width: 150px;
+    /* z-index: 3; */
+
+}
+.head{
+  margin: 0;
+  padding: 0;
+  margin-top: 2%;
+  text-align: center;
+  
+}
+.spic{
+    width:400px;
+}
+
+.side ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  
+ 
